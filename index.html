@@ -24,7 +24,59 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/nbw-parallax.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
+    <style>
+        #header-title {
+            bottom: 0px;
+            right: 0px;
+            position: absolute;
+            padding: 0px 20px 20px 0px;
+            width: 800px;
+            color: white;
+        }
+        
+        #header-menu {
+            margin: 0px 0px 10px;
+            overflow: hidden;
+            padding: 0px;
+        }
+        #header-menu li {
+            list-style: none;
+            margin: 20px 0px;
+        }
+        #header-menu li span {
+            font-size: 30px;
+            border: 1px solid #111;
+            border-image: initial;
+            background: url(http://vegas.jaysalvat.com/css/styles.css) rgba(0, 0, 0, 0.8);
+            padding: 0px 15px;
+        }
+        
+        #header-menu li span a {
+            color: #CF0;
+            text-decoration: initial;
+        }
+        
+        #sa {
+            text-align: right;
+        }
+        #sa h1 {
+            font-size: 68px;
+            letter-spacing: -2px;
+            line-height: 60px;
+            margin: 25px 0px;
+            text-shadow: black 0px 3px 3px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        
+        small {
+            background: url(http://vegas.jaysalvat.com/css/styles.css) rgba(0, 0, 0, 0.8);
+            border: 1px solid #111;
+            border-image: initial;
+            font-size: 15px;
+            padding: 0px 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,6 +101,21 @@
         <!-- BEGIN HEADER -->
         <header id="header">
             <div class="headermask">
+                <div id="header-title">
+                    <div id="sa">
+                        <h1><span>Alexander<br /> Eremenko</span></h1>
+                        <small>Design &amp; Development by </small>
+                        <ul id="header-menu">
+                            <!--<li><span><a href="#about">About</a></span></li>-->
+                            <li><span>READ THE <a href="#services">Services</a></span></li>
+                            <li><span>WATCH THE <a href="#portfolio">Portfolio</a></span></li>
+                            <li><span>MY <a href="#contact">Contact</a></span></li> 
+                        </ul>
+                    </div>
+
+                    <!-- /Logo -->
+                </div>
+
             </div>
             <div class="slider">
                 <!--Arrow Navigation-->
@@ -68,7 +135,7 @@
             <div class="container">
                 <div class="navopener">
                     <ul class="menu">
-                        <li><a href="#header">Onepage</a></li>
+                        <li><a href="#header">Home</a></li>
                         <!--<li><a href="#about">About</a></li>-->
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>

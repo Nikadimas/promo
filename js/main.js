@@ -56,7 +56,7 @@ $(document).ready(function(){
         
 //    //======================== PAGE SCROLL =============================
 	$('ul.menu').onePageNav();
-//	$('#sa a').smoothScroll();
+	$('#sa a').smoothScroll();
 //	
 //	$('a.enter').mouseenter(function(e) {
 //        $("a.enter").animate({padding:15+"px", opacity:0.7});
