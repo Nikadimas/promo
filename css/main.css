@@ -1,0 +1,412 @@
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.4;
+    font-family: 'League', Arial, sans-serif;
+}
+
+.wrapper, #header, #services, #contact, #portfolio, #footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 9999;
+    position: relative;
+}
+
+#services, #contact, #portfolio {
+    background: white url(../img/pattern2.png) repeat;
+    padding-bottom: 50px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headermask {
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index: 11;
+    background: url(../img/pattern3.png) repeat;
+    position: fixed;
+}
+
+.gallery-loader {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 11;
+    position: absolute;
+}
+
+#loader-wrapper {
+    background: url(../img/bg-black.png); 
+    width: 100px; 
+    height: 70px; 
+    border-radius: 10px;
+    text-align: center;
+    line-height: 65px;
+    margin: auto;
+}
+
+
+
+#preload {
+    background-color: black;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+    text-align: center;
+    opacity: 0.9;
+}
+
+#preload p {
+    color: white;
+    margin: 400px 0 0 0;
+    background: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+#photo_wrapper{
+    background: #374852;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+#video_wrapper{
+    background: #374852;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+
+/*------------------------------------------------------------------*/ 
+/*	Top Nav
+/*------------------------------------------------------------------*/
+#nav{
+	width:100%;
+	background:#000f17;
+	height:45px;
+	float:left;
+	clear:both;
+	z-index:10000;
+	position:relative;
+	border:none;
+}
+#nav ul.menu{
+	list-style-type:none;
+	text-align:center;
+	margin:13px 0 0 10px;
+	padding:0;
+	float:left;
+	
+}
+#nav ul.menu li{
+	display:inline-block;
+	margin:0 20px 0 0;
+	font-size:14px;
+	line-height:1;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#nav ul.menu li a{
+	text-decoration:none;
+	color:#FFFFFF;
+	-webkit-transition:color 0.7s ease-in;  
+	-moz-transition:color 0.7s ease-in;  
+	-o-transition:color 0.7s ease-in;  
+	transition:color 0.7s ease-in; 
+	
+}
+#nav ul.menu li.current a{
+	color:#374852;
+}
+#nav ul.menu li a:hover{
+	color:#374852;
+}
+.sticky-wrapper{
+	float:left;
+	width:100%;	
+}
+ul.social{
+	list-style-type:none;
+	text-align:center;
+	margin:0;
+	padding:0;
+	float:right;
+	border:none;
+	position:relative;
+}
+ul.social li{
+	width:45px;
+	height:45px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+a.head-icons{
+	width:45px;
+	height:45px;
+	display:block;
+}
+a.head-facebook { background:url(../img/minicons/facebook.png) no-repeat center; }
+a.head-twitter { background:url(../img/minicons/twitter.png) no-repeat center; }
+a.head-skype { background:url(../img/minicons/skype.png) no-repeat center; }
+a.head-linkedin { background:url(../img/minicons/linkedin.png) no-repeat center; }
+a.head-vimeo { background:url(../img/minicons/vimeo.png) no-repeat center; }
+
+/*------------------------------------------------------------------*/ 
+/*	Contact form input
+/*------------------------------------------------------------------*/
+
+.input-section input {
+    width: 75%;
+    height: 18px;
+    background: white;
+    padding: 10px 10px;
+}
+.input-section textarea {
+    width: 75%;
+    height: 100px;
+    background: white;
+    padding: 10px 10px;
+}
+.input-section a.send {
+    width: 75%;
+    height: 20px;
+    text-align: center;
+    background: #374852;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 10px 8px 10px;
+    box-shadow: 0 1px 1px #19242A;
+    -moz-box-shadow: 0 1px 1px #19242a;
+    -webkit-box-shadow: 0 1px 1px #19242A;
+    border-bottom: 1px solid #19242A;
+}
+
+/*------------------------------------------------------------------*/ 
+/*	Footer
+/*------------------------------------------------------------------*/
+
+#footer {
+    text-align: center;
+    padding: 20px 0;
+}
+#footer {
+    background: #000F17 url(../img/pattern.png) repeat;
+}
+
+/*------------------------------------------------------------------*/ 
+/*	1) Note: Design for a width of 768 px
+/*------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container { width:768px; margin:0 auto; }
+}
+
+
+/*------------------------------------------------------------------*/ 
+/*	2) Note: Design for a width of 480 px
+/*------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container { width:420px; margin:0 auto; }
+}
+
+/*------------------------------------------------------------------*/ 
+/*	3) Note: Design for a width of 320 px
+/*------------------------------------------------------------------*/
+@media only screen and (min-width: 200px) and (max-width: 479px){
+    .container { width:300px; margin:0 auto; }
+}
+
+    #return {
+        cursor: pointer;
+    }
+    
+/*------------------------------------------------------------------*/ 
+/*	Parallax
+/*------------------------------------------------------------------*/
+#parallax1{
+    width:100%;
+    height:400px;
+    float:left;
+    clear:both;
+    background:#CCC;
+    z-index: 9999;
+    position:relative;
+}
+#parallax1 .bg1 {
+    background: url(../img/1.jpg) 50% 0 repeat fixed;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+#parallax2{
+    width:100%;
+    height:400px;
+    float:left;
+    clear:both;
+    background:#CCC;
+    z-index: 9999;
+    position:relative;
+}
+#parallax2 .bg2 {
+    background: url(../img/2.jpg) 50% 0 repeat fixed;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+.parallax_mask {
+    width: 100%;
+    height: 100%;
+    background: url(../img/pattern3.png) repeat;
+    float: left;
+    position: absolute;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------*/ 
+/*	Fancybox wrapper
+/*------------------------------------------------------------------*/
+
+.fancybox-custom .fancybox-skin {
+    box-shadow: 0 0 50px #222;
+}
+/*------------------------------------------------------------------*/ 
+/*	Facebook loader
+/*------------------------------------------------------------------*/
+
+#facebookG {
+    width:42px;
+    margin: auto;
+}
+
+.facebook_blockG{
+    background-color:#FFFFFF;
+    border:1px solid #F5F5F5;
+    float:left;
+    height:30px;
+    margin-left:2px;
+    width:8px;
+    opacity:0.1;
+    -moz-animation-name:bounceG;
+    -moz-animation-duration:1.2s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -moz-transform:scale(0.7);
+    -webkit-animation-name:bounceG;
+    -webkit-animation-duration:1.2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    -webkit-transform:scale(0.7);
+    -ms-animation-name:bounceG;
+    -ms-animation-duration:1.2s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    -ms-transform:scale(0.7);
+    -o-animation-name:bounceG;
+    -o-animation-duration:1.2s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    -o-transform:scale(0.7);
+    animation-name:bounceG;
+    animation-duration:1.2s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+    transform:scale(0.7);
+}
+
+#blockG_1{
+    -moz-animation-delay:0.36s;
+    -webkit-animation-delay:0.36s;
+    -ms-animation-delay:0.36s;
+    -o-animation-delay:0.36s;
+    animation-delay:0.36s;
+}
+
+#blockG_2{
+    -moz-animation-delay:0.48s;
+    -webkit-animation-delay:0.48s;
+    -ms-animation-delay:0.48s;
+    -o-animation-delay:0.48s;
+    animation-delay:0.48s;
+}
+
+#blockG_3{
+    -moz-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+    -ms-animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    animation-delay:0.6s;
+}
+
+@-moz-keyframes bounceG{
+    0%{
+    -moz-transform:scale(1.2);
+    opacity:1}
+
+    100%{
+    -moz-transform:scale(0.7);
+    opacity:0.1}
+
+}
+
+@-webkit-keyframes bounceG{
+    0%{
+    -webkit-transform:scale(1.2);
+    opacity:1}
+
+    100%{
+    -webkit-transform:scale(0.7);
+    opacity:0.1}
+}
+
+@-ms-keyframes bounceG{
+    0%{
+    -ms-transform:scale(1.2);
+    opacity:1}
+
+    100%{
+    -ms-transform:scale(0.7);
+    opacity:0.1}
+}
+
+@-o-keyframes bounceG{
+    0%{
+    -o-transform:scale(1.2);
+    opacity:1}
+
+    100%{
+    -o-transform:scale(0.7);
+    opacity:0.1}
+}
+
+@keyframes bounceG{
+    0%{
+    transform:scale(1.2);
+    opacity:1}
+
+    100%{
+    transform:scale(0.7);
+    opacity:0.1}
+}
